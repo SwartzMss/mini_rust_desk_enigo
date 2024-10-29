@@ -1,0 +1,17 @@
+[package]
+name = "enigo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0"}
+serde_derive = { version = "1.0"}
+log = "0.4"
+rdev = { git = "https://github.com/rustdesk-org/rdev" }
+tfc = { git = "https://github.com/rustdesk-org/The-Fat-Controller", branch = "history/rebase_upstream_20240722" }
+mini_rust_desk_common = { git = "https://github.com/SwartzMss/mini_rust_desk_common", rev = "6ed0bf1aae81ee3de4e84f8158d840a9812bd29a"}
+winapi = { version = "0.3", features = ["winuser", "winbase"] }
+
+
+[build-dependencies]
+pkg-config = "0.3"
